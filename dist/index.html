@@ -1,0 +1,183 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Website Title</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="scripts/src/animate.css/animate.css">
+        <link rel="stylesheet" href="scripts/src/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="styles/styles.css">
+
+    </head>
+    <body ng-app="app">
+    
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+          <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand visible-xs">GALLURA</a>
+    </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home">home.</a></li>
+                <li><a href="#imoveis">imóveis</a></li>
+                <li><a href="#contato">contato</a></li>
+                <li><a href="#aGallura">aGallura</a></li>
+              </ul>
+              </div>
+          </div>
+        </nav>
+        <section id="home" class='home wow bounceInUp'>
+            <div class="scroll-bottom text-center" onclick="$('a[href=\'#aGallura\']').click()">V</div>
+        </section>
+        <section id="aGallura" class="aGallura  wow bounceInUp">  
+            <div class="container">          
+                <h1>MODERNIDADE</h1>
+
+                <p class="text-center">Acreditamos  que menos é mais, e trabalhamos para que a modernidade não seja apenas um luxo, mas que seja algo que agregue valor ao seu estilo de negócio e vida. O resultado são edifícios que estão em sintonia com os seus arredores e são úteis aos seus utilizadores.</p>
+
+
+                <h1>sofistacação</h1>
+
+                <p>Combinando os desejos e necessidades da existência humana, mantendo o delicado equilíbrio do ciclo do mundo natural em que vivemos é a principal força motriz da nossa abordagem sobre sofisticação.</p>
+
+                <h1><span class="font900">Estilo</span>/<span class="font900">/</span>style</h1>
+
+                <p>Estamos comprometidos em garantir a melhor qualidade para todos e cada canto do sea novo empreendimento.
+                Com uma equipe apaixonada em desenvolver as últimas inovações e tendências, criamos a mistura perfeita de estilo, valor e habitabilidade.</p>
+            </div>
+        </section>
+        <section id="imoveis" class="imoveis wow bounceInUp" >
+            <div class="scroll-bottom text-center" onclick="$('a[href=\'#contato\']').click()">V</div>
+        </section>
+        <section id="contato" class="contato wow bounceInUp container" ng-controller="contato">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    
+                        <h1 class="text-center">CONTATO</h1>
+                        <p class="text-center">Utilize o formulário abaixo para entrar em contato ou solicitar informações adicionais e nossa equipe entrará em contato com você o mais rápido possível. Se preferir teremos o prazer de falar pessoalmente com você basta utlilizar o número de telefone informado abaixo. Obrigado pelo seu contato.
+                        </p>
+                        <hr/>
+
+                        <form name="form" ng-submit="enviar()" novalidate>
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <div class="row">
+                                        <div class="col-sm-12 form-group"  ng-class="{'has-error' : form.nome.$invalid}">
+                                            <label for="nome">Nome</label>                                        
+                                            <input ng-model="nome" name="nome" type="text" class="form-control" required/>                                      
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 form-group" ng-class="{'has-error' : form.email.$invalid}">
+                                            <label for="email">Email</label>
+                                            <input ng-model="email" name="email" type="email" class="form-control" required/>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 form-group" ng-class="{'has-error' : form.mensagem.$invalid}">
+                                            <label for="mensagem">Mensagem</label>
+                                            <textarea ng-model="nmensagem" name="mensagem" class="form-control" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-12 ">
+                                            <button type="submit" class="btn btn-primary pull-right">Enviar</button>
+                                        </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </form>
+
+                        <br/>
+                        <br/>
+                        
+                        <div class="row text-center endContato">
+                            <div class="col-sm-8 text-center">
+                                <img src="images/location.png">
+                                <br/>
+                                <br/>
+                                <p>
+                                71, Taquaral, Lotário Novaes - Campinas/SP
+                                </p>
+                                <hr/>
+                            </div>
+                            <div class="col-sm-4 text-center">
+                                <img src="images/phone.png">
+                                <br/>
+                                <br/>
+                                <p>
+                                    +55 19 3512-9050
+                                </p>
+                                <hr/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="scroll-top text-center" onclick="$('a[href=\'#home\']').click()">^</div>
+        </footer>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+        
+        <script src="scripts/app.js"></script>
+        <script src="scripts/src/jquery/dist/jquery.js"></script>
+        <script src="scripts/src/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="scripts/src/angular.min.js"></script>
+        <script src="scripts/src/wow/dist/wow.js"></script>
+        <script src="scripts/src/funcoes.js"></script>
+        <script>
+          new WOW().init();
+          // criar o app angular
+        angular.module('app',[]);
+        var config = {
+            headers: {
+              'Content-Type': "application/x-www-form-urlencoded; charset=UTF-8"
+            }
+        }
+
+        // criar o controller angular
+        angular.module('app').controller('contato', function($scope,$http){    
+            $scope.enviar = function(){
+                var destinatario = "marcus.cominatto@ddtotal.com.br";
+                var assunto = "Contato site - Gallura";
+                var msg = "";
+                msg += "Nome: "+$scope.nome+"<br/>"+
+                        "Email: "+$scope.email+"<br/>"+
+                        "Mensagem: "+$scope.mensagem+"<br/>";
+
+                $http.post("enviaEmail.php",{"destinatario":destinatario,"assunto":assunto,"msg": msg},config).success(function (data){
+                    if(data.retorno != 1){
+                        $scope.nome = "";
+                        $scope.email = "";
+                        $scope.telefone = "";
+                        $scope.retorno = "Desculpe, não conseguimos receber seu email, entre em contato com nossa central de atendimento.";
+                    }else{
+                        $scope.retorno = "Email enviado com sucesso, em breve entraremos em contato.";
+                    }
+                });
+            }
+        });          
+        </script>
+    </body>
+</html>
