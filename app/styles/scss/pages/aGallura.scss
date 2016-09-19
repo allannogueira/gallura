@@ -1,0 +1,97 @@
+#pgAGallura{
+	.scroll-bottom{
+		&:hover{
+			cursor: pointer;
+			box-shadow: 5px 5px 5px #000;
+		}
+	}
+	div.faixaMenu{
+		width: 100%;
+		height: 3px;
+		border: 2px solid $cinzaEscuro;
+		position: fixed;
+		top: 50px;
+	}
+	#section1{
+		background: $cinza;
+		h1{
+			position:absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -185px;
+			margin-top: -60px;
+			font-family: 'trajan';
+			color: $azulClaro;
+			font-size: 50pt;
+		}
+
+		p{
+			position:absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -220px;
+			margin-top: 90px;
+			color: $branco;
+		}
+
+
+		.scroll-bottom{
+			margin-top: 40%;
+			margin-left: 32%;
+		}
+	}
+
+
+	#section2{
+		background-image: url("../images/a-altura.jpg");
+		.scroll-bottom{
+			margin-top: 40%;
+			margin-left: 32%;
+			background: $cinza;
+		}
+	}
+
+	#section3{
+		.colaboradores{
+			width: 600px;
+			max-width: 100%;
+		}
+
+		h1{
+			font-family: 'Roboto';
+  			font-style: normal;
+			font-weight: 900;
+		}
+
+		.scroll-bottom{
+			margin-bottom: 100px;
+			background: $branco;
+			color: $azulClaro;
+			
+		}
+	}
+
+	#section4{
+		background-image: url("../images/nossas-atividades.jpg");
+		background-size: 100% auto;
+		padding-top: 70px;
+
+		h1{
+			color: $branco;
+			margin-bottom: 0px;
+			padding-bottom:0px;
+		}
+
+		h2{
+			color: $branco;
+			margin-top: 0px;
+			padding-top: 0px;
+		}
+
+		.na-icon{
+			width: 600px;
+		}
+	}
+
+
+}
