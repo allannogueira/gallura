@@ -7,22 +7,9 @@
 //global things
 @import 'general/_reset';
 @import 'layout/_main';
-@import 'pages/aGallura';
-@import 'pages/imoveis';
 @import '../../scripts/src/animate.css/animate.css';
 @import '../../scripts/src/bootstrap/dist/css/bootstrap.css';
 
-/* font converted using font-converter.net. thank you! */
-@font-face {
-  font-family: 'TrajanPro-Regular';
-  src: url('./fonts/TrajanPro-Regular.eot'); /* IE9 Compat Modes */
-  src: url('./fonts/TrajanPro-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('./fonts/TrajanPro-Regular.woff2') format('woff2'), /* Modern Browsers */
-    url('./fonts/TrajanPro-Regular.woff') format('woff'), /* Modern Browsers */
-    url('./fonts/TrajanPro-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('./fonts/TrajanPro-Regular.svg') format('svg'); /* Legacy iOS */  font-weight: normal;
-  font-style: normal;
-}
 
 /* cyrillic-ext */
 @font-face {
