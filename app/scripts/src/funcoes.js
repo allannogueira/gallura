@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	$("section").css("min-height", $(window).height());
+  $(".altura-100").css("min-height", $(window).height());
 
 
 $('a[href*="#"]:not([href="#"])').click(function() {
